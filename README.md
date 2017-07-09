@@ -69,13 +69,14 @@ var b = ["João", "Maria", "Antonio", "Rafaela"]
  > - Null
  > - Undefined
 
- ## 3 - Operadores ->
-
- Temos 3 tipos de operadores no Javascript que geralmente estão presentes em todas as linguagens de programação, são eles:
-
- ### 3.1 Operadores Aritméticos
+## 3 - Operadores ->
 
  Os cálculos e o controle da matemática que podemos ter durante a implementação do código são peças chave pra qualquer linguagem de programação, não seria diferente com o Javascript.
+
+ Os principais tipos de operadores no Javascript que geralmente estão presentes em todas as linguagens de programação, são eles:
+
+### 3.1 Operadores Aritméticos
+
 
 #### 3.1.1 Soma
 
@@ -121,4 +122,66 @@ a % b
 b % a
 ```
 
+### 3.2 Operadores de Comparação
+
+#### 3.2.1 Igual
+
+```javascript
+a == b
+
+a === b
+```
+
+#### 3.2.2 Diferente
+
+```javascript
+a != b
+
+a !== b
+```
+
+#### 3.2.3 Maior/Menor
+
+```javascript
+a > b
+
+b < a
+```
+
+#### 3.2.4 Maior Igual/Menor Igual
+
+```javascript
+a >= b
+
+b <= a
+```
+
+#### 3.2.5 Ternário
+
+```javascript
+a == b ? true : false
+```
+
+### 3.3 Operadores Lógicos
+
+#### 3.3.1 E
+
+```javascript
+a && b
+```
+
+#### 3.3.2 Ou
+
+```javascript
+a || b
+```
+
+#### 3.3.3 Diferente
+
+```javascript
+!a
+
+!b
+```
+ 
 
