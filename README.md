@@ -184,4 +184,126 @@ a || b
 !b
 ```
  
+## 4 - Condicionais ->
 
+De nada adiantaria ter tantas e boas opções de operadores se não pudéssemos aplicar condicionais aos mesmos, não acha?
+
+### 4.1 If / Else
+
+```javascript
+if(a == b){
+	//faça algo
+}
+else {
+	//faça algo diferente
+}
+```
+
+```javascript
+if(a != b){
+	//faça algo
+}
+else {
+	//faça algo diferente
+}
+```
+
+### 4.2 Elsif
+
+```javascript
+if(a == 10){
+	//faça algo se for igual a 10
+}
+else if(a == 20) {
+	//faça algo	se for igual a 20
+}
+else {
+	//faça algo diferente se nao for igual a nenhum dos dois
+}
+```
+
+### 4.3 Condicionais aninhadas
+
+```javascript
+if(a == b){
+	if(a == 10){
+		//faça algo
+	}
+}
+```
+
+```javascript
+if(a == b){
+	if(a == 10){
+		//faça algo
+	}
+	else if(a == 20){
+		//faça algo
+	}
+}
+else {
+	if(a == 100){
+		//faça algo
+	}
+	else if(a == 200){
+		//faça algo
+	}	
+}
+```
+
+### 4.4 Code Refactor nas Condicionais aninhadas
+
+```javascript
+if(a == b && a == 10){
+	//faça algo
+}
+else(a != b && a == 100){
+	//faça algo	
+}
+```
+
+```javascript
+if((a + b == 20) || (b + c == 30)){
+	//faça algo
+}
+else{
+	//faça algo	
+}
+```
+
+```javascript
+if(a > b || c < d){
+	//faça algo
+}
+else{
+	//faça algo	
+}
+```
+
+## 5 - Estruturas de Repetição (laços) ->
+
+Pra manter um código mais legível e não precisar repetir várias vezes a mesma condição, utilizamos laços de repetição baseados em parâmetros informadas ao programa que está sendo desenvolvido:
+
+### 5.1 While
+
+```javascript
+while(1 < 10){
+	//faça algo
+}
+```
+
+### 5.2 Do While
+
+```javascript
+while(1 < 10){
+	//faça algo
+}
+```
+
+### 5.3 For
+
+```javascript
+while(1 < 10){
+	//faça algo
+}
+```
