@@ -2,6 +2,11 @@
 
 Primeiros passos em programação/javascript.
 
+## 0 - Init!
+
+Javascript se tornou praticamente uma linguagem universal, presente nas mais conhecidas vertentes do desenvolvimento, front, back e mobile.
+
+
 ## 1 - Variáveis ->
 
 Variáveis são valores atribuídos a uma sequência de caractéres para que sejam memorizadas, reutilizadas e modificadas durante a execução do código.
