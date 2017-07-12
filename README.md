@@ -368,3 +368,68 @@ function verifiqueUmNumero(numero){
 	}
 }
 ```
+
+###6.4 Variáveis Globais x Variáveis Locais.
+
+Variáveis globais são escritas no escopo principal, todos podem ver e podem ser reutilizadas em qualquer lugar do código.
+
+Variáveis locais são escritas dentro de uma função e são reutilizadas apenas dentro da mesma.
+
+```javascript
+//Variável global
+var linguagem = "Javascript";
+
+function imprimeALinguagem(){
+	//Reutilizada dentro de uma função
+	console.log(linguagem);
+}
+
+imprimeALinguagem();
+```
+
+```javascript
+function imprimeALinguagem(){
+	//Declarada dentro da função -> Variável local
+	var linguagem = "Javascript";
+	console.log(linguagem);
+}
+
+imprimeALinguagem();
+```
+
+###6.5 Algumas funções disponíveis no Javascript.
+
+```javascript
+var cidades = ['Paulo Afonso', 'Delmiro Gouveia', 'Glória'];
+
+cidades.push('Monte Alegre');
+cidades.pop();
+cidades.shift();
+```
+
+```javascript
+var nome = 'Javascript';
+
+nome.length
+nome.toUpperCase();
+nome.toLowerCase();
+```
+
+```javascript
+var num = 198.87;
+var numRounded = Math.round(num);
+```
+
+## 7 - Query Selectors (Front-End) ->
+
+Passando a trabalhar com Javascript com foco mais no front-end, precisamos ter o básico de conhecimento do DOM (Domain Object Model) e como trabalhar com os elementos que pertencem ao mesmo. Pra isso, temos algumas opções para capturar elementos ou informações dos elementos HTML via Javascript.
+
+###8.1 Click
+
+## 8 - Eventos (Front-End) ->
+
+Eventos são tarefas executadas em decorrência de alguma ação. Por exemplo, imprimir um número após clicar em um botão. Mudar a cor de uma div após passar o mouse por cima e etc...
+
+Geralmente os eventos são tratados dentro de uma função para um determinado fim.
+
+###8.1 Click
