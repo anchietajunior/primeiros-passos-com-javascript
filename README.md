@@ -2,10 +2,16 @@
 
 Primeiros passos em programação/javascript.
 
-## 0 - Init!
+## 0 - Init! ->
 
-Javascript se tornou praticamente uma linguagem universal, presente nas mais conhecidas vertentes do desenvolvimento, front, back e mobile.
+Vamos ao que interessa, só que antes precisamos saber um pouco de como surgiu o ***Javascript***.
 
+***Javascript*** se tornou praticamente uma linguagem universal, presente nas mais conhecidas vertentes do desenvolvimento, front, back e mobile.
+Criada por Brendan Eich, que na época estava a serviço da Netscape a linguagem ***Javascript*** foi influenciada por uma outra linguagem chamada Hypertalk, criada pela Apple. ***Javascript*** não foi o primeiro nome utilizado para a linguagem, ela nasceu como Mocha, logo depois virou Livrescript e depois veio o nome que conhecemos até hoje, uma jogada de marketing com o nome do Java que na época estava em alta. Sua primeira versão foi lançada em 1995.
+
+Podemos até utilizar o nome ***Javascript*** pra tudo, mas o nome oficial da linguagem é ECMAScript, baseado no nome da ECMA International, organização responsável por manter os padrões da linguagem. Atualmente a versão mais utilizada é a ES5, mas já temos a versão ES6 (2015) disponível que pode ser utilizada através de algum "transpiler" e que trás grandes e significativas mudanças no core da linguagem.
+
+Quando foi criada, a linguagem ***Javascript*** tinha a principal função de deixar as coisas mais dinâmicas, ou seja, reagir a determinados eventos e trazer um pouco mais de interação com o usuário, mas com o passar dos anos o ***Javascript*** tornou-se uma das linguagens de programação mais importantes no desenvolvimento de aplicações web.
 
 ## 1 - Variáveis ->
 
