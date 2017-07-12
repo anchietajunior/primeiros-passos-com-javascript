@@ -199,23 +199,25 @@ a || b
 
 De nada adiantaria ter tantas e boas opções de operadores se não pudéssemos aplicar condicionais aos mesmos, não acha?
 
+Aqui também vamos começar a usar um cara bem legal chamado console.log() pra exibir nossos resultados.
+
 ### 4.1 If / Else
 
 ```javascript
 if(a == b){
-	//faça algo
+	console.log('a é igual a b');
 }
 else {
-	//faça algo diferente
+	console.log('a é diferente de b');
 }
 ```
 
 ```javascript
 if(a != b){
-	//faça algo
+	console.log('a é diferente de b');
 }
 else {
-	//faça algo diferente
+	console.log('a é igual a b');
 }
 ```
 
@@ -303,18 +305,66 @@ while(1 < 10){
 }
 ```
 
+Loop infinito...
+
+```javascript
+count = 0;
+
+while(count < 10){
+	//faça algo
+	count++;
+}
+```
+
 ### 5.2 Do While
 
 ```javascript
-while(1 < 10){
-	//faça algo
-}
+count = 0;
+
+do {
+	console.log(count);
+	count++;
+} while(count <= 10)
 ```
 
 ### 5.3 For
 
 ```javascript
-while(1 < 10){
-	//faça algo
+for(var count = 0; count < 10; count++){
+	console.log(count);
+}
+```
+
+## 6 - Funções ->
+
+Funções são blocos de código que executam uma determinada tarefa ou calcula algo, além disso funções podem receber e retornar valores.
+
+###6.1 Funções sem parâmetros e retornos.
+
+Podemos dizer que esse tipo de função é um tipo simples que podemos chama-la para executar simples tarefas.
+
+```javascript
+function digaOi(){
+	console.log('Oi pessoal, eu sou o Javascript.')
+}
+```
+###6.2 Funções com parâmetros e sem retorno.
+
+```javascript
+function calculeUmNumeroMaisCem(numero){
+	total = numero + 100;
+	console.log(total)
+}
+```
+
+###6.3 Funções com parâmetros e retorno.
+
+```javascript
+function verifiqueUmNumero(numero){
+	if(numero % 2 == 0){
+		return true;
+	}else {
+		return false;
+	}
 }
 ```
