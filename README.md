@@ -422,9 +422,45 @@ var numRounded = Math.round(num);
 
 ## 7 - Query Selectors (Front-End) ->
 
-Passando a trabalhar com Javascript com foco mais no front-end, precisamos ter o básico de conhecimento do DOM (Domain Object Model) e como trabalhar com os elementos que pertencem ao mesmo. Pra isso, temos algumas opções para capturar elementos ou informações dos elementos HTML via Javascript.
+Passando a trabalhar com Javascript com foco mais no front-end, precisamos ter o básico de conhecimento do DOM (Domain Object Model) e como trabalhar com os elementos que pertencem ao mesmo. Pra isso, precisamos ter a capacidade de encontrar e capturar algum elemento ou algum de seus atributos, especialidade do JS.
 
-###8.1 Click
+###7.1 Selecionando elementos pela sua ***< tag >***
+
+```javascript
+document.getElementsByTagName('p');
+```
+
+Ainda podemos atribuir o resultado do getElementsByTagName a uma variável:
+
+```javascript
+var elementos = document.getElementsByTagName('p');
+```
+
+###7.2 Selecionando elementos por ***id***
+
+```javascript
+var elemento = document.getElementByTagId('my_element');
+```
+
+###7.3 Selecionando elementos por sua ***classe***
+
+```javascript
+var elementos = document.getElementsByClassName('my_element');
+```
+
+###7.4 Selecionando elementos por ***css selectors***
+
+```javascript
+var elementos = document.querySelectorAll('div.my_element');
+```
+
+```javascript
+var elementos = document.querySelectorAll('div.element_one, p.element_two');
+```
+
+```javascript
+var elementos = document.querySelector('#one, #two, #three');
+```
 
 ## 8 - Eventos (Front-End) ->
 
