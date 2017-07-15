@@ -466,6 +466,52 @@ var elementos = document.querySelector('#one, #two, #three');
 
 Eventos são tarefas executadas em decorrência de alguma ação. Por exemplo, imprimir um número após clicar em um botão. Mudar a cor de uma div após passar o mouse por cima e etc...
 
-Geralmente os eventos são tratados dentro de uma função para um determinado fim.
+Geralmente os eventos são tratados dentro de uma função para um determinado fim, vamos ver alguns dos principais eventos Javascript.
 
-###8.1 Click
+Vamos ver as duas formas mais comuns de se trabalhar com eventos e conhecer alguns dos principais eventos.
+
+###8.1 Mouse Events -> Click
+
+```html
+<button onclick="show()">Clique aqui</button>
+<script>
+	function show(){
+		alert('Hello World!')
+	}
+</script>
+```
+
+```javascript
+var elemento = document.getElementById('#button');
+
+element.addEventListener('click', function(){
+	alert('Hello World!');
+})
+```
+
+###8.1 Mouse Events -> Over/Out
+
+```javascript
+var elemento = document.querySelector('.hello')[0];
+
+elemento.addEventListener('mouseover', function(){
+	console.log('Hoje é :' Date());
+})
+
+elemento.addEventListener('mouseout', function(){
+	console.log('Casa suja, chão sujo');
+})
+```
+
+###8.3 Key Events -> KeyDown/KeyPress/KeyUp
+
+```javascript
+window.addEventListener("keydown", function (event) {
+  console.log(event.keyCode);
+  if(event.keyCode == '32'){
+    console.log('hoje é: ' + Date());
+  }
+})
+```
+
+http://keycode.info/
